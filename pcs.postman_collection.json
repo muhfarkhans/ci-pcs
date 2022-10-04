@@ -1,0 +1,702 @@
+{
+	"info": {
+		"_postman_id": "ff09fe29-14bb-47f0-ad4d-ffb1f40be777",
+		"name": "pcs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "transaksi",
+					"item": [
+						{
+							"name": "transaksi",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transaksi bulan ini",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/transaksi_bulan_ini",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"transaksi_bulan_ini"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transaksi",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "total",
+											"value": "1000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transaksi",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "total",
+											"value": "2000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transaksi",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "item transaksi",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/item_transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"item_transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "item transaksi by transaksi id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/item_transaksi_by_transaksi_id?transaksi_id=1",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"item_transaksi_by_transaksi_id"
+									],
+									"query": [
+										{
+											"key": "transaksi_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "item transaksi",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "transaksi_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "produk_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "qty",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "harga_saat_transaksi",
+											"value": "100",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/item_transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"item_transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "item transaksi",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "transaksi_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "produk_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "qty",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "harga_saat_transaksi",
+											"value": "99",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/item_transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"item_transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "item transaksi",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/item_transaksi",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"item_transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "item transaksi by transaksi id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "transaksi_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/item_transaksi_by_transaksi_id",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"item_transaksi_by_transaksi_id"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "produk",
+					"item": [
+						{
+							"name": "produk",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/produk",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"produk"
+									],
+									"query": [
+										{
+											"key": "column",
+											"value": "stok",
+											"disabled": true
+										},
+										{
+											"key": "direction",
+											"value": "asc",
+											"disabled": true
+										},
+										{
+											"key": "q",
+											"value": "infi",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "produk",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nama",
+											"value": "razer infinity",
+											"type": "text"
+										},
+										{
+											"key": "harga",
+											"value": "1000",
+											"type": "text"
+										},
+										{
+											"key": "stok",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "admin_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/produk",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"produk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "produk",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "razer kraken chroma",
+											"type": "text"
+										},
+										{
+											"key": "harga",
+											"value": "999",
+											"type": "text"
+										},
+										{
+											"key": "stok",
+											"value": "99",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/produk",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"produk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "produk",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/produk",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"produk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "excel list produk",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_pcs}}/api_pcs/exportproduk",
+									"host": [
+										"{{base_url_pcs}}"
+									],
+									"path": [
+										"api_pcs",
+										"exportproduk"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_pcs}}/api_pcs/admin",
+							"host": [
+								"{{base_url_pcs}}"
+							],
+							"path": [
+								"api_pcs",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "lala@lala.lala",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "lala@lala.lala",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "lala",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url_pcs}}/api_pcs/admin",
+							"host": [
+								"{{base_url_pcs}}"
+							],
+							"path": [
+								"api_pcs",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "lulu",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "lulu@lulu.lulu",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "lulu@lulu.lulu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url_pcs}}/api_pcs/admin",
+							"host": [
+								"{{base_url_pcs}}"
+							],
+							"path": [
+								"api_pcs",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url_pcs}}/api_pcs/admin",
+							"host": [
+								"{{base_url_pcs}}"
+							],
+							"path": [
+								"api_pcs",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{access_token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "koko@koko.koko",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "koko@koko.koko",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url_pcs}}/api_pcs/login",
+					"host": [
+						"{{base_url_pcs}}"
+					],
+					"path": [
+						"api_pcs",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
